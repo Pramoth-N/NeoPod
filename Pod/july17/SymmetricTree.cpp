@@ -5,38 +5,38 @@
 using namespace std;
 
 // Definition for a binary tree node
-struct TreeNode {
+struct Node {
     int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x) {}
+    Node *left;
+    Node *right;
+    Node(int x) : val(x) {}
 };
 
 // Function to build a binary tree from level order traversal representation
-TreeNode* buildTree(vector<int>& nodes) {
+Node* buildTree(vector<int>& nodes) {
     if (nodes.empty()) return nullptr;
     
     int index = 0;
     int n = nodes.size();
     
-    TreeNode* root = new TreeNode(nodes[index++]);
-    queue<TreeNode*> q;
+    Node* root = new Node(nodes[index++]);
+    queue<Node*> q;
     q.push(root);
     
     while (index < n && !q.empty()) {
-        TreeNode* node = q.front();
+        Node* node = q.front();
         q.pop();
         
         // Left child
         if (index < n && nodes[index] != -1) {
-            node->left = new TreeNode(nodes[index]);
+            node->left = new Node(nodes[index]);
             q.push(node->left);
         }
         index++;
         
         // Right child
         if (index < n && nodes[index] != -1) {
-            node->right = new TreeNode(nodes[index]);
+            node->right = new Node(nodes[index]);
             q.push(node->right);
         }
         index++;
@@ -46,7 +46,7 @@ TreeNode* buildTree(vector<int>& nodes) {
 }
 
 // Helper function to check if two trees are mirrors of each other
-bool isMirror(TreeNode* leftSubtree, TreeNode* rightSubtree) {
+bool isMirror(Node* leftSubtree, Node* rightSubtree) {
     if (leftSubtree == nullptr && rightSubtree == nullptr)
         return true;
     
@@ -58,7 +58,7 @@ bool isMirror(TreeNode* leftSubtree, TreeNode* rightSubtree) {
 }
 
 // Main function to determine if the binary tree is symmetric
-bool isSymmetric(TreeNode* root) {
+bool isSymmetric(Node* root) {
     if (root == nullptr)
         return true;
     
@@ -75,7 +75,7 @@ int main() {
     }
     
     // Build the binary tree
-    TreeNode* root = buildTree(nodes);
+    Node* root = buildTree(nodes);
 
     // Check if the tree is symmetric
     if (isSymmetric(root)) {
@@ -85,12 +85,12 @@ int main() {
     }
     
     // Level order traversal
-    queue<TreeNode*> q;
+    queue<Node*> q;
     q.push(root);
     vector<int> levelOrder;
     
     while (!q.empty()) {
-        TreeNode* node = q.front();
+        Node* node = q.front();
         q.pop();
         
         if (node == nullptr) {
