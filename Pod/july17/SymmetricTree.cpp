@@ -9,7 +9,7 @@ struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
-    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x) {}
 };
 
 // Function to build a binary tree from level order traversal representation
@@ -76,6 +76,13 @@ int main() {
     
     // Build the binary tree
     TreeNode* root = buildTree(nodes);
+
+    // Check if the tree is symmetric
+    if (isSymmetric(root)) {
+        cout << "The binary tree is symmetric" << endl;
+    } else {
+        cout << "The binary tree is not symmetric" << endl;
+    }
     
     // Level order traversal
     queue<TreeNode*> q;
@@ -101,12 +108,6 @@ int main() {
     }
     cout << endl;
     
-    // Check if the tree is symmetric
-    if (isSymmetric(root)) {
-        cout << "The binary tree is symmetric" << endl;
-    } else {
-        cout << "The binary tree is not symmetric" << endl;
-    }
     
     return 0;
 }
