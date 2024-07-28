@@ -1,0 +1,15 @@
+Integer n = length of array;
+arr =  array elements;
+Integer count = 0;
+for i in 0 to n
+	for j in i to n
+		for k in i to j
+			sum += arr[k]
+				if sum % target  == 0
+					count =  count + 1;
+				end if
+		end loop
+	end loop
+end loop
+
+print count;
