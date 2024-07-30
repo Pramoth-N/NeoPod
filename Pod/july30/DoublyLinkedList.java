@@ -105,7 +105,7 @@ class DoublyLinkedList
 
     static void print(Node head){
         while(head != null){
-            System.out.print(head.key);
+            System.out.print(head.key + " ");
             head = head.next;
         }
     }
