@@ -13,14 +13,9 @@ Technical employees (represented by positive integers) and creative employees (r
 The relative order within each group should be preserved.
 You have a list of employees where each employee is represented by a unique integer (positive for technical and negative for creative).
 
-
 Your task is to rearrange the list such that technical and creative employees are alternated while maintaining the order within each group.
 
-
-
 Write a program to rearrange the employees' list based on the given conditions.
-
-
 
 Example
 
@@ -36,15 +31,11 @@ Output
 
 -4 1 -1 2 3 4  -------> Rearranged list
 
-
-
 Explanation
 
 Creative employees come first and are alternated with technical employees.
 
 The relative order within the technical and creative groups is preserved.
-
-
 
 Note: Here employee ID "0" represent technical employee.
 
@@ -59,8 +50,6 @@ Output format :
 The first line contains the elements of the original employee list before rearrangement.
 
 The second line contains the elements of the employee list after rearrangement according to the given conditions.
-
-
 
 Refer to the sample output for the formatting specifications.
 
