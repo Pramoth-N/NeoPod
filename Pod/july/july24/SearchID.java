@@ -1,4 +1,5 @@
 /*
+
   Problem Statement 
   In a company's customer service center, each customer interaction is logged with a unique numerical ID. 
   A customer support representative needs to search through these logs to find the position of a specific customer interaction ID 
@@ -19,6 +20,8 @@
   Print an integer the total number of comparisons made during the search process, prefixed by "Total comparisons made: ".
  Print an integer the total sum of all interaction IDs, prefixed by "Sum of all interaction:".
  Print double value the average of all interaction IDs, prefixed by "Average of all interaction:".
+ 
+ 
  */
 import java.util.*;
 

@@ -1,6 +1,6 @@
 /*
  * 
-
+ * 
 A palindrome string means that if we reverse the string, it gives you the same string.
 For example:
          "madam" is a palindrome; if we reverse that string, it gives you the same word as "madam." 
@@ -19,6 +19,7 @@ Refer to the sample input and output for formatting specifications.
 
 Code constraints :
 1 ≤ string.length ≤ 500
+
 
  * 
  */

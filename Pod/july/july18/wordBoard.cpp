@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
+
 using namespace std;
+
 bool isValid(int r , int c , int n , int m)
 {
     return r>=0 && r<n && c>=0 && c<m ;

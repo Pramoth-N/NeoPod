@@ -9,6 +9,7 @@
 -- Table Name: soldCopies 
 -- Column Name: bookName, soldCopies
 
+
 select
     authorName Author_Name,
     sum(soldCopies) sold_sum

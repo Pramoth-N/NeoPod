@@ -18,7 +18,7 @@ Output format:
     The output prints string, representing the longest repeating, non- overlapping substring in it. 
 
 Code constraints: 
-    The strings contain 100 characters.
+    The strings contain 100 characters.  
 
 */
 

@@ -17,8 +17,6 @@ If the doubly linked list is a palindrome, print "The doubly linked list is a pa
 
 If the doubly linked list is not a palindrome, print "The doubly linked list is not a palindrome".
 
-
-
 Refer to the sample output for the formatting specifications.
 
 Code constraints :

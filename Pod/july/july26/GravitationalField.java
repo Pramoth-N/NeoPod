@@ -7,6 +7,7 @@
  Output Format 
  • Print the gravitational force between the two masses with six decimal places. 
  • If the input is negative, print Invalid input.
+ 
  */
 
  import java.util.*;

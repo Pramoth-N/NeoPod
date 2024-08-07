@@ -13,8 +13,6 @@ The first line of output prints "Preorder Traversal: " followed by the pre-order
 
 The second line prints "Sum: " followed by the sum of all node values in the binary tree.
 
-
-
 Refer to the sample output for formatting specifications.
 
 Code constraints :
@@ -88,7 +86,7 @@ class BinaryTree {
         return left + right + root.key;
     }
 }
-public class Main{
+public class PreOrderTraversal{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

@@ -7,6 +7,7 @@
  * •Print "Legacy" if the address matches the legacy address pattern. 
  * Print "Invalid input" if the address does not match either pattern. Constraints 
  * • Input can be a printable ASCII Characters.
+ * 
  */
 
  import java.util.Scanner;

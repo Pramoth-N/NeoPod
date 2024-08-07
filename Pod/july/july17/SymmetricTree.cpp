@@ -13,6 +13,7 @@ struct Node {
 };
 
 // Function to build a binary tree from level order traversal representation
+
 Node* buildTree(vector<int>& nodes) {
     if (nodes.empty()) return nullptr;
     
